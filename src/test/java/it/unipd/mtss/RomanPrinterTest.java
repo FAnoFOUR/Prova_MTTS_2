@@ -49,4 +49,43 @@ public class RomanPrinterTest {
                    + "|_____||_____||_____|", art);
 	}
 
+    @Test
+	public void testPrinter4() { 
+		System.out.println("Test print numero 4");
+        int num = 4;
+        String art = RomanPrinter.print(num);
+        assertEquals(" _____ __      __" + "\n"
+                    +" |_ _| \\ \\    / /" + "\n"
+                    +"  | |   \\ \\  / / " + "\n"
+                    +"  | |    \\ \\/ /  " + "\n"
+                    +" _| |_    \\  /   " + "\n"
+                    +"|_____|    \\/    " , art);
+	}
+
+    @Test
+	public void testPrinter5() { 
+		System.out.println("Test print numero 5");
+        int num = 5;
+        String art = RomanPrinter.print(num);
+        assertEquals("__      __" + "\n"
+                    +"\\ \\    / /" + "\n"
+                    +" \\ \\  / / " + "\n"
+                    +"  \\ \\/ /  " + "\n"
+                    +"   \\  /   " + "\n"
+                    +"    \\/    " , art);
+	}
+
+    @Test
+	public void testPrinter6() { 
+		System.out.println("Test print numero 6");
+        int num = 6;
+        String art = RomanPrinter.print(num);
+        assertEquals("__      __ _____ " + "\n" 
+                   + "\\ \\    / / |_ _| " + "\n"
+                   + " \\ \\  / /   | |  " + "\n" 
+                   + "  \\ \\/ /    | |  " + "\n" 
+                   + "   \\  /    _| |_ " + "\n" 
+                   + "    \\/    |_____|", art);
+	}
+
 }
