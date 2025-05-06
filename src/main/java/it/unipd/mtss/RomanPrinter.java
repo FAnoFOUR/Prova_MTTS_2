@@ -69,76 +69,76 @@ public class RomanPrinter {
 
     private static String printAsciiArt(String romanNumber){
 
-            String rigaF1 = "";
-            String rigaF2 = "";
-            String rigaF3 = "";
-            String rigaF4 = "";
-            String rigaF5 = "";
-            String rigaF6 = "";
+        StringBuilder rigaF1 = new StringBuilder();
+        StringBuilder rigaF2 = new StringBuilder();
+        StringBuilder rigaF3 = new StringBuilder();
+        StringBuilder rigaF4 = new StringBuilder();
+        StringBuilder rigaF5 = new StringBuilder();
+        StringBuilder rigaF6 = new StringBuilder();
 
         for(char a : romanNumber.toCharArray()){
 
             if(a == 'I'){
-                rigaF1.concat(I.getRiga1());
-                rigaF2.concat(I.getRiga2());
-                rigaF3.concat(I.getRiga3());
-                rigaF4.concat(I.getRiga4());
-                rigaF5.concat(I.getRiga5());
-                rigaF6.concat(I.getRiga6());
+                rigaF1.append(I.getRiga1());
+                rigaF2.append(I.getRiga2());
+                rigaF3.append(I.getRiga3());
+                rigaF4.append(I.getRiga4());
+                rigaF5.append(I.getRiga5());
+                rigaF6.append(I.getRiga6());
             }
 
             if(a == 'V'){
-                rigaF1.concat(V.getRiga1());
-                rigaF2.concat(V.getRiga2());
-                rigaF3.concat(V.getRiga3());
-                rigaF4.concat(V.getRiga4());
-                rigaF5.concat(V.getRiga5());
-                rigaF6.concat(V.getRiga6());
+                rigaF1.append(V.getRiga1());
+                rigaF2.append(V.getRiga2());
+                rigaF3.append(V.getRiga3());
+                rigaF4.append(V.getRiga4());
+                rigaF5.append(V.getRiga5());
+                rigaF6.append(V.getRiga6());
             }
 
             if(a == 'X'){
-                rigaF1.concat(X.getRiga1());
-                rigaF2.concat(X.getRiga2());
-                rigaF3.concat(X.getRiga3());
-                rigaF4.concat(X.getRiga4());
-                rigaF5.concat(X.getRiga5());
-                rigaF6.concat(X.getRiga6());
+                rigaF1.append(X.getRiga1());
+                rigaF2.append(X.getRiga2());
+                rigaF3.append(X.getRiga3());
+                rigaF4.append(X.getRiga4());
+                rigaF5.append(X.getRiga5());
+                rigaF6.append(X.getRiga6());
             }
 
             if(a == 'L'){
-                rigaF1.concat(L.getRiga1());
-                rigaF2.concat(L.getRiga2());
-                rigaF3.concat(L.getRiga3());
-                rigaF4.concat(L.getRiga4());
-                rigaF5.concat(L.getRiga5());
-                rigaF6.concat(L.getRiga6());
+                rigaF1.append(L.getRiga1());
+                rigaF2.append(L.getRiga2());
+                rigaF3.append(L.getRiga3());
+                rigaF4.append(L.getRiga4());
+                rigaF5.append(L.getRiga5());
+                rigaF6.append(L.getRiga6());
             }
 
             if(a == 'C'){
-                rigaF1.concat(C.getRiga1());
-                rigaF2.concat(C.getRiga2());
-                rigaF3.concat(C.getRiga3());
-                rigaF4.concat(C.getRiga4());
-                rigaF5.concat(C.getRiga5());
-                rigaF6.concat(C.getRiga6());
+                rigaF1.append(C.getRiga1());
+                rigaF2.append(C.getRiga2());
+                rigaF3.append(C.getRiga3());
+                rigaF4.append(C.getRiga4());
+                rigaF5.append(C.getRiga5());
+                rigaF6.append(C.getRiga6());
             }
 
             if(a == 'D'){
-                rigaF1.concat(D.getRiga1());
-                rigaF2.concat(D.getRiga2());
-                rigaF3.concat(D.getRiga3());
-                rigaF4.concat(D.getRiga4());
-                rigaF5.concat(D.getRiga5());
-                rigaF6.concat(D.getRiga6());
+                rigaF1.append(D.getRiga1());
+                rigaF2.append(D.getRiga2());
+                rigaF3.append(D.getRiga3());
+                rigaF4.append(D.getRiga4());
+                rigaF5.append(D.getRiga5());
+                rigaF6.append(D.getRiga6());
             }
             
             if(a == 'M'){
-                rigaF1.concat(M.getRiga1());
-                rigaF2.concat(M.getRiga2());
-                rigaF3.concat(M.getRiga3());
-                rigaF4.concat(M.getRiga4());
-                rigaF5.concat(M.getRiga5());
-                rigaF6.concat(M.getRiga6());
+                rigaF1.append(M.getRiga1());
+                rigaF2.append(M.getRiga2());
+                rigaF3.append(M.getRiga3());
+                rigaF4.append(M.getRiga4());
+                rigaF5.append(M.getRiga5());
+                rigaF6.append(M.getRiga6());
             }
             //
         }
