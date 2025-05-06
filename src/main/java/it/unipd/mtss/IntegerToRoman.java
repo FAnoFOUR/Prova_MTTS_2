@@ -17,9 +17,9 @@ public class IntegerToRoman {
     if (number < 1 || number > 1000) {
       throw new IllegalArgumentException("Numero non valido");
     }
-    for (i = 0; i <= 12; i++) {
+    for (int i = 0; i <= 12; i++) {
     while (number >= integers[i]){
-      roman.append(romanletters[i]);
+      roman.concat(romanletters[i]);
       number = number - integers[i];
     }
     }
