@@ -12,7 +12,6 @@ public class IntergerToRomanTest {
     
     @Test
 	public void testConvert1() {
-		System.out.println("Test convert numero 1");
         int num = 1;
         String ris = IntegerToRoman.convert(num);
         assertEquals("I", ris);
@@ -20,7 +19,6 @@ public class IntergerToRomanTest {
 
     @Test
 	public void testConvert2() {
-		System.out.println("Test convert numero 2");
         int num = 2;
         String ris = IntegerToRoman.convert(num);
         assertEquals("II", ris);
@@ -28,34 +26,59 @@ public class IntergerToRomanTest {
 
     @Test
 	public void testConvert3() {
-		System.out.println("Test convert numero 3");
         int num = 3;
         String ris = IntegerToRoman.convert(num);
         assertEquals("III", ris);
 	}
 
     @Test
-	public void testConvert4() { 
-		System.out.println("Test convert numero 4");
+	public void testConvert4() {
         int num = 4;
         String ris = IntegerToRoman.convert(num);
         assertEquals("IV", ris);
 	}
 
     @Test
-	public void testConvert5() { 
-		System.out.println("Test convert numero 5");
+	public void testConvert5() {
         int num = 5;
         String ris = IntegerToRoman.convert(num);
         assertEquals("V", ris);
 	}
 
     @Test
-	public void testConvert6() { 
-		System.out.println("Test convert numero 6");
+	public void testConvert6() {
         int num = 6;
         String ris = IntegerToRoman.convert(num);
         assertEquals("VI", ris);
+	}
+
+    @Test
+	public void testConvert7() { 
+		System.out.println("Test convert numero 7");
+        int num = 7;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("VII", ris);
+	}
+
+    @Test
+	public void testConvert8() {
+        int num = 8;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("VIII", ris);
+	}
+
+    @Test
+	public void testConvert9() {
+        int num = 9;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("IX", ris);
+	}
+
+    @Test
+	public void testConvert10() {
+        int num = 10;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("X", ris);
 	}
 
 }
