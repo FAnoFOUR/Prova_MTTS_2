@@ -121,5 +121,38 @@ public class IntergerToRomanTest {
         assertEquals("L", ris);
 	}
 
+    @Test
+	public void testConvert60() {
+        int num = 60;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("LX", ris);
+	}
 
+    @Test
+	public void testConvert70() {
+        int num = 70;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("LXX", ris);
+	}
+
+    @Test
+	public void testConvert80() {
+        int num = 80;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("LXXX", ris);
+	}
+
+    @Test
+	public void testConvert90() {
+        int num = 90;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("XC", ris);
+	}
+
+    @Test
+	public void testConvert100() {
+        int num = 100;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("C", ris);
+	}
 }

@@ -201,5 +201,65 @@ public class RomanPrinterTest {
                    + "|______|", art);
 	}
 
+    @Test
+    public void testPrinter60() {
+        int num = 60;
+        String art = RomanPrinter.print(num);
+        assertEquals(" _      __   __" + "\n" 
+                   + "| |     \\ \\ / /" + "\n"
+                   + "| |      \\ V / " + "\n" 
+                   + "| |       > <  " + "\n" 
+                   + "| |____  / . \\ " + "\n" 
+                   + "|______|/_/ \\_\\", art);
+	}
+
+    @Test
+    public void testPrinter70() {
+        int num = 70;
+        String art = RomanPrinter.print(num);
+        assertEquals(" _      __   ____   __" + "\n" 
+                   + "| |     \\ \\ / /\\ \\ / /" + "\n"
+                   + "| |      \\ V /  \\ V / " + "\n" 
+                   + "| |       > <    > <  " + "\n" 
+                   + "| |____  / . \\  / . \\ " + "\n" 
+                   + "|______|/_/ \\_\\/_/ \\_\\", art);
+	}
+
+    @Test
+    public void testPrinter80() {
+        int num = 80;
+        String art = RomanPrinter.print(num);
+        assertEquals(" _      __   ____   ____   __" + "\n" 
+                   + "| |     \\ \\ / /\\ \\ / /\\ \\ / /" + "\n"
+                   + "| |      \\ V /  \\ V /  \\ V / " + "\n" 
+                   + "| |       > <    > <    > <  " + "\n" 
+                   + "| |____  / . \\  / . \\  / . \\ " + "\n" 
+                   + "|______|/_/ \\_\\/_/ \\_\\/_/ \\_\\", art);
+	}
+
+    @Test
+	public void testPrinter90() {
+        int num = 90;
+        String art = RomanPrinter.print(num);
+        assertEquals("__   __  _____ " + "\n" 
+                   + "\\ \\ / / / ____|" + "\n"
+                   + " \\ V / | |     " + "\n" 
+                   + "  > <  | |     " + "\n" 
+                   + " / . \\ | |____ " + "\n" 
+                   + "/_/ \\_\\ \\_____|", art);
+	}
+
+    @Test
+	public void testPrinter100() {
+        int num = 100;
+        String art = RomanPrinter.print(num);
+        assertEquals("  _____ " + "\n" 
+                   + " / ____|" + "\n"
+                   + "| |     " + "\n" 
+                   + "| |     " + "\n" 
+                   + "| |____ " + "\n" 
+                   + " \\_____|", art);
+	}
+
 
 }
