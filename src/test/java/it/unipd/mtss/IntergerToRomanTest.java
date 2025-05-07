@@ -4,8 +4,7 @@
 ////////////////////////////////////////////////////////////////////
 package it.unipd.mtss;
 
-import static org.junit.Assert.*;
-
+import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class IntergerToRomanTest {
@@ -100,5 +99,27 @@ public class IntergerToRomanTest {
         String ris = IntegerToRoman.convert(num);
         assertEquals("XX", ris);
 	}
+
+    @Test
+	public void testConvert30() {
+        int num = 30;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("XXX", ris);
+	}
+
+    @Test
+	public void testConvert40() {
+        int num = 40;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("XL", ris);
+	}
+
+    @Test
+	public void testConvert50() {
+        int num = 50;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("L", ris);
+	}
+
 
 }

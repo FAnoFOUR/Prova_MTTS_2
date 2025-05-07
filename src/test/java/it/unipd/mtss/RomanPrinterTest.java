@@ -4,8 +4,7 @@
 ////////////////////////////////////////////////////////////////////
 package it.unipd.mtss;
 
-import static org.junit.Assert.*;
-
+import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class RomanPrinterTest {
@@ -165,5 +164,42 @@ public class RomanPrinterTest {
                    + " / . \\  / . \\ " + "\n" 
                    + "/_/ \\_\\/_/ \\_\\", art);
 	}
+
+    @Test
+	public void testPrinter30() {
+        int num = 30;
+        String art = RomanPrinter.print(num);
+        assertEquals("__   ____   ____   __" + "\n" 
+                   + "\\ \\ / /\\ \\ / /\\ \\ / /" + "\n"
+                   + " \\ V /  \\ V /  \\ V / " + "\n" 
+                   + "  > <    > <    > <  " + "\n" 
+                   + " / . \\  / . \\  / . \\ " + "\n" 
+                   + "/_/ \\_\\/_/ \\_\\/_/ \\_\\", art);
+	}
+
+    @Test
+    public void testPrinter40() {
+        int num = 40;
+        String art = RomanPrinter.print(num);
+        assertEquals("__   __ _      " + "\n" 
+                   + "\\ \\ / /| |     " + "\n"
+                   + " \\ V / | |     " + "\n" 
+                   + "  > <  | |     " + "\n" 
+                   + " / . \\ | |____ " + "\n" 
+                   + "/_/ \\_\\|______|", art);
+	}
+
+    @Test
+    public void testPrinter50() {
+        int num = 50;
+        String art = RomanPrinter.print(num);
+        assertEquals(" _      " + "\n" 
+                   + "| |     " + "\n"
+                   + "| |     " + "\n" 
+                   + "| |     " + "\n" 
+                   + "| |____ " + "\n" 
+                   + "|______|", art);
+	}
+
 
 }

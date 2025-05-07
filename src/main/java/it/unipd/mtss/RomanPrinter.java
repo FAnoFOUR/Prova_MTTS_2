@@ -6,7 +6,7 @@ package it.unipd.mtss;
 
 public class RomanPrinter {
 
-    private static Letter I= new Letter(
+    private static final Letter I= new Letter(
         " _____ ",
         " |_ _| ",
         "  | |  ",
@@ -14,7 +14,7 @@ public class RomanPrinter {
         " _| |_ ",
         "|_____|"
     );
-    private static Letter V= new Letter(
+    private static final Letter V= new Letter(
         "__      __",
         "\\ \\    / /",
         " \\ \\  / / ",
@@ -22,7 +22,7 @@ public class RomanPrinter {
         "   \\  /   ",
         "    \\/    "
     ); 
-    private static Letter X= new Letter(
+    private static final Letter X= new Letter(
         "__   __",
         "\\ \\ / /",
         " \\ V / ",
@@ -30,7 +30,7 @@ public class RomanPrinter {
         " / . \\ ",
         "/_/ \\_\\"
     ); 
-    private static Letter L= new Letter(
+    private static final Letter L= new Letter(
         " _      ",
         "| |     ",
         "| |     ",
@@ -38,7 +38,7 @@ public class RomanPrinter {
         "| |____ ",
         "|______|"
     ); 
-    private static Letter C= new Letter(
+    private static final Letter C= new Letter(
         "  _____ ",
         " / ____|",
         "| |     ",
@@ -46,15 +46,15 @@ public class RomanPrinter {
         "| |____ ",
         " \\_____|"
     ); 
-    private static Letter D= new Letter(
+    private static final Letter D= new Letter(
         "_____   ",
         "| __  \\ ",
         "| |  | |",
         "| |  | |",
-        "| |  | |",
+        "| |__| |",
         "|_____/ "
     ); 
-    private static Letter M= new Letter(
+    private static final Letter M= new Letter(
         " __  __ ",
         "|  \\/  |",
         "| \\  / |",
