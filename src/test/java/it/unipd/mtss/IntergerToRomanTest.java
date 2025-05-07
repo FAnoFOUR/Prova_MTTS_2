@@ -4,8 +4,7 @@
 ////////////////////////////////////////////////////////////////////
 package it.unipd.mtss;
 
-import static org.junit.Assert.*;
-
+import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class IntergerToRomanTest {
@@ -101,4 +100,122 @@ public class IntergerToRomanTest {
         assertEquals("XX", ris);
 	}
 
+    @Test
+	public void testConvert30() {
+        int num = 30;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("XXX", ris);
+	}
+
+    @Test
+	public void testConvert40() {
+        int num = 40;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("XL", ris);
+	}
+
+    @Test
+	public void testConvert50() {
+        int num = 50;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("L", ris);
+	}
+
+    @Test
+	public void testConvert60() {
+        int num = 60;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("LX", ris);
+	}
+
+    @Test
+	public void testConvert70() {
+        int num = 70;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("LXX", ris);
+	}
+
+    @Test
+	public void testConvert80() {
+        int num = 80;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("LXXX", ris);
+	}
+
+    @Test
+	public void testConvert90() {
+        int num = 90;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("XC", ris);
+	}
+
+    @Test
+	public void testConvert100() {
+        int num = 100;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("C", ris);
+	}
+
+    @Test
+	public void testConvert200() {
+        int num = 200;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("CC", ris);
+	}
+
+    @Test
+	public void testConvert300() {
+        int num = 300;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("CCC", ris);
+	}
+
+    @Test
+	public void testConvert400() {
+        int num = 400;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("CD", ris);
+	}
+
+    @Test
+	public void testConvert500() {
+        int num = 500;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("D", ris);
+	}
+
+    @Test
+	public void testConvert600() {
+        int num = 600;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("DC", ris);
+	}
+
+    @Test
+	public void testConvert700() {
+        int num = 700;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("DCC", ris);
+	}
+
+    @Test
+	public void testConvert800() {
+        int num = 800;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("DCCC", ris);
+	}
+
+    @Test
+	public void testConvert900() {
+        int num = 900;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("CM", ris);
+	}
+
+    @Test
+	public void testConvert1000() {
+        int num = 1000;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("M", ris);
+	}
 }
