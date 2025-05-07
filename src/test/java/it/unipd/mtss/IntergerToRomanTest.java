@@ -53,8 +53,7 @@ public class IntergerToRomanTest {
 	}
 
     @Test
-	public void testConvert7() { 
-		System.out.println("Test convert numero 7");
+	public void testConvert7() {
         int num = 7;
         String ris = IntegerToRoman.convert(num);
         assertEquals("VII", ris);
@@ -79,6 +78,27 @@ public class IntergerToRomanTest {
         int num = 10;
         String ris = IntegerToRoman.convert(num);
         assertEquals("X", ris);
+	}
+
+    @Test
+	public void testConvert15() {
+        int num = 15;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("XV", ris);
+	}
+
+    @Test
+	public void testConvert19() {
+        int num = 19;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("XIX", ris);
+	}
+
+    @Test
+	public void testConvert20() {
+        int num = 20;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("XX", ris);
 	}
 
 }

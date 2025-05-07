@@ -130,4 +130,40 @@ public class RomanPrinterTest {
                    + "/_/ \\_\\", art);
 	}
 
+    @Test
+	public void testPrinter15() {
+        int num = 15;
+        String art = RomanPrinter.print(num);
+        assertEquals("__   ____      __" + "\n" 
+                   + "\\ \\ / /\\ \\    / /" + "\n"
+                   + " \\ V /  \\ \\  / / " + "\n" 
+                   + "  > <    \\ \\/ /  " + "\n" 
+                   + " / . \\    \\  /   " + "\n" 
+                   + "/_/ \\_\\    \\/    ", art);
+	}
+
+    @Test
+	public void testPrinter19() {
+        int num = 19;
+        String art = RomanPrinter.print(num);
+        assertEquals("__   __ _____ __   __" + "\n" 
+                   + "\\ \\ / / |_ _| \\ \\ / /" + "\n"
+                   + " \\ V /   | |   \\ V / " + "\n" 
+                   + "  > <    | |    > <  " + "\n" 
+                   + " / . \\  _| |_  / . \\ " + "\n" 
+                   + "/_/ \\_\\|_____|/_/ \\_\\", art);
+	}
+
+    @Test
+	public void testPrinter20() {
+        int num = 20;
+        String art = RomanPrinter.print(num);
+        assertEquals("__   ____   __" + "\n" 
+                   + "\\ \\ / /\\ \\ / /" + "\n"
+                   + " \\ V /  \\ V / " + "\n" 
+                   + "  > <    > <  " + "\n" 
+                   + " / . \\  / . \\ " + "\n" 
+                   + "/_/ \\_\\/_/ \\_\\", art);
+	}
+
 }
