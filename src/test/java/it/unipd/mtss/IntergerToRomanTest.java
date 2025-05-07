@@ -155,4 +155,33 @@ public class IntergerToRomanTest {
         String ris = IntegerToRoman.convert(num);
         assertEquals("C", ris);
 	}
+
+    @Test
+	public void testConvert200() {
+        int num = 200;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("CC", ris);
+	}
+
+    @Test
+	public void testConvert300() {
+        int num = 300;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("CCC", ris);
+	}
+
+    @Test
+	public void testConvert400() {
+        int num = 400;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("CD", ris);
+	}
+
+    @Test
+	public void testConvert500() {
+        int num = 500;
+        String ris = IntegerToRoman.convert(num);
+        assertEquals("D", ris);
+	}
+
 }

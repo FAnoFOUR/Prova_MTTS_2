@@ -261,5 +261,54 @@ public class RomanPrinterTest {
                    + " \\_____|", art);
 	}
 
+    @Test
+	public void testPrinter200() {
+        int num = 200;
+        String art = RomanPrinter.print(num);
+        assertEquals("  _____   _____ " + "\n" 
+                   + " / ____| / ____|" + "\n"
+                   + "| |     | |     " + "\n" 
+                   + "| |     | |     " + "\n" 
+                   + "| |____ | |____ " + "\n" 
+                   + " \\_____| \\_____|", art);
+	}
+
+     @Test
+	public void testPrinter300() {
+        int num = 300;
+        String art = RomanPrinter.print(num);
+        assertEquals("  _____   _____   _____ " + "\n" 
+                   + " / ____| / ____| / ____|" + "\n"
+                   + "| |     | |     | |     " + "\n" 
+                   + "| |     | |     | |     " + "\n" 
+                   + "| |____ | |____ | |____ " + "\n" 
+                   + " \\_____| \\_____| \\_____|", art);
+	}
+
+    @Test
+	public void testPrinter400() {
+        int num = 400;
+        String art = RomanPrinter.print(num);
+        assertEquals("  _____ _____   " + "\n" 
+                   + " / ____|| __  \\ " + "\n"
+                   + "| |     | |  | |" + "\n" 
+                   + "| |     | |  | |" + "\n" 
+                   + "| |____ | |__| |" + "\n" 
+                   + " \\_____||_____/ ", art);
+	}
+
+    @Test
+	public void testPrinter500() {
+        int num = 500;
+        String art = RomanPrinter.print(num);
+        assertEquals("_____   " + "\n" 
+                   + "| __  \\ " + "\n"
+                   + "| |  | |" + "\n" 
+                   + "| |  | |" + "\n" 
+                   + "| |__| |" + "\n" 
+                   + "|_____/ ", art);
+	}
+
+
 
 }
