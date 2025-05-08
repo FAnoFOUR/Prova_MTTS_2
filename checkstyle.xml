@@ -12,7 +12,7 @@
         <property name="fileExtensions" value="java, xml"/>
     </module>
     <module name="Header">
-        <property name="headerFile" value="${config.folder}/LICENSE.md"/>
+        <property name="headerFile" value="LICENSE.md"/>
         <property name="fileExtensions" value="java, txt"/>
     </module>
 
