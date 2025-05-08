@@ -4,10 +4,18 @@
 ////////////////////////////////////////////////////////////////////
 package it.unipd.mtss;
 
-import static org.junit.Assert.assertEquals;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class IntergerToRomanTest {
+
+    @Test
+    public void testIllegalArgumentException() {
+        assertThrows(IllegalArgumentException.class, () -> IntegerToRoman.convert(0));
+        assertThrows(IllegalArgumentException.class, () -> IntegerToRoman.convert(1001));
+        assertThrows(IllegalArgumentException.class, () -> IntegerToRoman.convert(-1));
+    }
     
     @Test
 	public void testConvert1() {
