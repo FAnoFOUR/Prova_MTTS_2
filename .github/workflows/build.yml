@@ -27,4 +27,4 @@ jobs:
         COVERALLS_REPO_TOKEN: ${{secrets.COVERALLS_REPO_TOKEN}}
       run: mvn coveralls:report
     outputs:
-     actualResult: ${{ steps.Build%20%with%20%Maven.outcome }}
+     actualResult: ${{ steps.Build with Maven.outcome }}
