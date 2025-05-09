@@ -26,5 +26,8 @@ jobs:
       env:
         COVERALLS_REPO_TOKEN: ${{secrets.COVERALLS_REPO_TOKEN}}
       run: mvn coveralls:report
-    outputs:
-     actualResult: ${{ steps.Build_with_Maven.outcome }}
+    - name: Check Fail
+      run: |
+       if: ${{ failure()}}; then
+         exit: 1
+       fi
