@@ -6,7 +6,6 @@ jobs:
   build:
 
     runs-on: windows-latest
-    continue-on-error: true
     
     steps:
     - uses: actions/checkout@v3
@@ -26,7 +25,3 @@ jobs:
       env:
         COVERALLS_REPO_TOKEN: ${{secrets.COVERALLS_REPO_TOKEN}}
       run: mvn coveralls:report
-    - name: Check Fail
-      if: ${{ failure()}}
-      run: |
-        exit 1
