@@ -18,10 +18,10 @@ jobs:
     - name: Build_with_Maven
       run: mvn -B install --file pom.xml
     - name: Test with JaCoCo
-      if: ${{ failure()}}
+      if: always()
       run: mvn test jacoco:report
     - name: Report to Coveralls
-      if: ${{ failure()}}
+      if: always()
       env:
         COVERALLS_REPO_TOKEN: ${{secrets.COVERALLS_REPO_TOKEN}}
       run: mvn coveralls:report
